@@ -6,7 +6,7 @@ class AVLNode:
         self.right = None
     
     def __str__(self, level=0, prefix="Root: "):
-        ret = "\\t" * level + prefix + str(self.key) + "\\n"
+        ret = "\t" * level + prefix + str(self.key) + "\n"
         if self.left:
             ret += self.left.__str__(level + 1, "L--- ")
         if self.right:
